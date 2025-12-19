@@ -8,11 +8,11 @@ The main goal of SVM is to maximize the margin between two classes. But you maig
 **Support vectors** are those closest data points to the decision boundary.  
 The larger the margin the better the model performs on the new unseen data.
 ## Key concepts of SVM 
-- *Hyperplane* : 
-- *Support vectors*
-- *Margin*
-- *Kernel*
-- *Hard margin*
+- *Hyperplane* : This is a decision boundary which best separates the classes by maximizing the margin.
+- *Support vectors* : They are the data points that are closest to the margin and directly "support" or define its width. They are the most critical points for determining the optimal hyperplanes.
+- *Margin* : The distance between the decision boundary and the closest data points (the support vectors).
+- *Kernel* : A function which maps the data into a high dimensional space. Somtimes the data can't be separated by a separate line like a circle of dots inside the dataset.A kernel transforms this data into a higher dimensional space so that it can separate using a single hyperplane.
+- *Hard margin* : The ideal case in SVM ; It is the maximum size of margins with no support vectors within it.
 - *Soft margin*
 - *Hinge loss*
 - *Dual problem*
