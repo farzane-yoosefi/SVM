@@ -13,6 +13,9 @@ The larger the margin the better the model performs on the new unseen data.
 - *Margin* : The distance between the decision boundary and the closest data points (the support vectors).
 - *Kernel* : A function which maps the data into a high dimensional space. Somtimes the data can't be separated by a separate line like a circle of dots inside the dataset.A kernel transforms this data into a higher dimensional space so that it can separate using a single hyperplane.
 - *Hard margin* : The ideal case in SVM ; It is the maximum size of margins with no support vectors within it.
-- *Soft margin*
-- *Hinge loss*
-- *Dual problem*
+- *Soft margin* :It is used when data is not perfectly separable , allows some misclassifications inside the margins and involves a penalty which balances width and errors.
+- *Hinge loss* : While SVM maximizes the margin width, it uses hinge loss to punish the rule-breakers — these are:  
+1. Data points on the wrong side of the decision boundary (not "decision tree"—that's a different algorithm).  
+2. Data points inside the margin (even if on the correct side).
+## How does SVM work?
+The main goal is to find the best hyperplane which best separates the classes with the maximum margin between them.This margin the distance between the hyperplane and the support vectores.The best hyperplane is also known as **hard margin**. It maximizes the distance between the hyperplane and the nearest datapoint form both both classes. This ensures a clear separation between both classes. From the follong figure we choose l2 as hard margin.
